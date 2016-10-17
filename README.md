@@ -20,6 +20,7 @@ In addition, I am probably making inefficient allocations.
 However, I'm not really motivated to do better.
 
 Takes 25 seconds to run llfyrbsshvtsmpntbncnfrmdbyncdt aoouiaeaeaoeoieeoieaeoe.
+Takes about 225 seconds to run bbsrshpdlkftbllsndhvmrbndblbnsthndlts aieaeaeieooaaaeoeeaeoeaau.
 
 # Source
 

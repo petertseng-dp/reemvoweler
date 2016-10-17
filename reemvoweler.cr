@@ -55,5 +55,5 @@ words = File.read_lines("/usr/share/cracklib/cracklib-small").map(&.chomp).rejec
   letters && !letters.includes?(w)
 }
 
-list = LetterMerger.new(words, ARGV.map(&.chars)).merge
+list = LetterMerger.new(words).merge(ARGV.map(&.chars))
 list.sort_by { |x| x.map(&.size).sort.reverse }.each { |l| puts l.join(' ') }

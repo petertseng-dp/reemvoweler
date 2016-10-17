@@ -20,8 +20,7 @@ describe LetterMerger do
       hotel
       fate
     )
-    lm = LetterMerger.new(words)
-    lm.merge(["hotelfate".chars]).sort.should eq([
+    LetterMerger.new(words, ["hotelfate".chars]).merge.sort.should eq([
       %w(hot elf ate),
       %w(hotel fate),
     ])
@@ -45,8 +44,7 @@ describe LetterMerger do
       hotel
       fate
     )
-    lm = LetterMerger.new(words)
-    lm.merge(["htlft", "oeae"].map(&.chars)).sort.should eq([
+    LetterMerger.new(words, ["htlft", "oeae"].map(&.chars)).merge.sort.should eq([
       %w(hoe at left),
       %w(hot elf ate),
       %w(hotel fate),
@@ -64,8 +62,7 @@ describe LetterMerger do
       lord
       voldemort
     )
-    lm = LetterMerger.new(words)
-    lm.merge("tommarvoloriddle".chars.map { |c| [c] }).uniq { |l| Set.new(l) }.map(&.sort).should eq([
+    LetterMerger.new(words,"tommarvoloriddle".chars.map { |c| [c] }).merge.uniq { |l| Set.new(l) }.map(&.sort).should eq([
       # Voldemort has an identity crisis? "Am I Lord Voldemort?"
       %w(am i lord voldemort),
     ])

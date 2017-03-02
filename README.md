@@ -19,8 +19,8 @@ A more pared-down word list would reduce the time taken, of course, but I lack t
 In addition, I am probably making inefficient allocations.
 However, I'm not really motivated to do better.
 
-Takes 7 seconds to run llfyrbsshvtsmpntbncnfrmdbyncdt aoouiaeaeaoeoieeoieaeoe.
-Takes about 55 seconds to run bbsrshpdlkftbllsndhvmrbndblbnsthndlts aieaeaeieooaaaeoeeaeoeaau.
+Takes 7 seconds to run llfyrbsshvtsmpntbncnfrmdbyncdt aoouiaeaeaoeoieeoieaeoe (30, 23).
+Takes about 55 seconds to run bbsrshpdlkftbllsndhvmrbndblbnsthndlts aieaeaeieooaaaeoeeaeoeaau (37, 25).
 
 # Source
 
